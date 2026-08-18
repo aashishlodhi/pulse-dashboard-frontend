@@ -98,15 +98,15 @@ export default function App() {
 
             <LiveClock />
 
-            <Card icon={ListTodo} title="To Do Daily">
+            <Card icon={ListTodo} title="To Do by Today">
               <Checklist items={board.dailyTasks} setItems={makeSetter("dailyTasks")} placeholder="Add item..." />
             </Card>
 
-            <Card icon={CalendarCheck} title="To Do Weekly">
+            <Card icon={CalendarCheck} title="To Do by sunday">
               <Checklist items={board.weeklyTasks} setItems={makeSetter("weeklyTasks")} placeholder="Add item..." />
             </Card>
 
-            <Card icon={Crown} title="To Do Monthly">
+            <Card icon={Crown} title="To Do by Month-end">
               <Checklist items={board.monthlyTasks} setItems={makeSetter("monthlyTasks")} placeholder="Add item..." />
             </Card>
           </div>
